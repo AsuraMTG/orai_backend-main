@@ -1,0 +1,33 @@
+-----------------------------------------------------------------
+
+TO INSTALL: npm i express
+
+TO INSTALL Cors: npm i express cors
+
+TO START: node .\server.js
+
+-----------------------------------------------------------------
+
+const express = require('express');
+const app = express();
+const port = 3000;
+const cors = require('cors');
+app.use(cors({origin : 'https://localhost:3000'}));
+const fs = require('fs'); 
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
+-----------------------------------------------------------------
+
+app.get('/', (req, res) => {
+    // -- index.html visszaküldese
+    res.sendFile(__dirname + '/public/index.html');
+});
+
+-----------------------------------------------------------------
+
+app.listen(port, () => {
+    console.log(`Express server is live in localhost:${port}`);
+});
+
+-----------------------------------------------------------------
