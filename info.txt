@@ -2,9 +2,9 @@
 
 TO INSTALL: npm i express
 
-TO INSTALL Cors: npm i express cors
+TO INSTALL Cors: npm i express cors body-parser path fs
 
-TO START: node .\server.js
+TO START: node .\app.js
 
 -----------------------------------------------------------------
 

@@ -13,13 +13,13 @@
         <header>
             <h1>Új Gyümölcs</h1>
         </header>
-        <form action="#" method="post">
+        <form action="http://localhost:3000/fruit" method="post" enctype="multipart/form-data">
             <p class="beviteli">
-                <input type="text" name="megnevezes" id="megnevezes" placeholder="Megnevezés">
+                <input type="text" name="megnevezes" id="megnevezes" placeholder="Megnevezés" min="5">
             </p>
 
             <p class="beviteli">
-                <input type="text" name="egysegara" id="egysegara" placeholder="Egyságára">
+                <input type="text" name="egysegara" id="egysegara" placeholder="Egyságára" >
             </p>
 
             <p class="beviteli">
@@ -32,10 +32,11 @@
             </p>
 
             <p class="beviteli">
-                <button>Új Gyümölcs</button>
+                <input type="submit" value="Új gyümölcs" id="createButton">
             </p>
 
         </form>
+        <a href="index.html">Vissza</a> 
     </div>
 </body>
 </html>
