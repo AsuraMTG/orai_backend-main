@@ -2,7 +2,7 @@
 
 TO INSTALL: npm i express
 
-TO INSTALL Cors: npm i express cors body-parser path fs
+TO INSTALL Cors: npm i express cors body-parser path fs mysql2
 
 TO START: node .\app.js
 
