@@ -2,32 +2,23 @@
 
 TO INSTALL: npm i express
 
-TO INSTALL Cors: npm i express cors body-parser path fs mysql2
+TO INIT: npm init
+    environment
+
+TO INSTALL express: npm i express 
+
+TO INSTALL cors: npm i cors
+
+TO INSTALL body-parser: npm i body-parser
+
+TO INSTALL path: npm i path
+
+TO INSTALL fs: npm i fs
+
+TO INSTALL mysql2: npm i  mysql2
+
+TO INSTALL .env: npm i dotenv
 
 TO START: node .\app.js
-
------------------------------------------------------------------
-
-const express = require('express');
-const app = express();
-const port = 3000;
-const cors = require('cors');
-app.use(cors({origin : 'https://localhost:3000'}));
-const fs = require('fs'); 
-const path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));
-
------------------------------------------------------------------
-
-app.get('/', (req, res) => {
-    // -- index.html visszaküldese
-    res.sendFile(__dirname + '/public/index.html');
-});
-
------------------------------------------------------------------
-
-app.listen(port, () => {
-    console.log(`Express server is live in localhost:${port}`);
-});
 
 -----------------------------------------------------------------
