@@ -35,7 +35,30 @@ app.get('/rendeles/:id', (req, res) => {
 
 });
 
-
+app.post('/rendeles', (req, res) => {
+    const data = req.body;
+    let sql = "INSERT INTO `rendeles` (`razon`, `vazon`, `fazon`, `idopont`) VALUES (NULL, ?, ?, current_timestamp())";
+    connection.query(sql, [data.vazon, data.fazon], function (err, results) { 
+        if (err) {
+            console.error(err.message, err.code); 
+            res.status(500).send('Database error');
+        } else {
+            const rendelesId = results.insertId;
+            for (let index = 0; index < data.items.length; index++) {
+                const element = data.items[index];
+                sql = "INSERT INTO `tetel` (`razon`, `pazon`, `db`) VALUES (?, ?, ?)";
+                connection.query(sql, [rendelesId, element.pazon, element.db], function (err, results) { 
+                    if (err) {
+                        console.error(err.message, err.code); 
+                        res.status(500).send('Database error');
+                    } 
+                    res.status(201).send(results);
+                });
+            }
+            res.status(201).send(results);
+        }
+    });
+});
 
 
 
