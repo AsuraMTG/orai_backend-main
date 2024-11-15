@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciklusok</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1><%= title %></h1>
+    <ol>
+        <% for (let i = 0; i < 13; i++) { %>            <!-- Ciklus 0-tól 12-ig, összesen 13 alkalommal -->
+        <li><%= i + 1 %></li>                           <!-- A ciklus változó értékének 1-től kezdődő listát jelenít meg -->
+        <% } %>                                         <!-- Ciklus vége -->
+    </ol>
+
+    <ol>
+        <% const object = { a: 1, b: 2, c: 3 }; %>                  <!-- Objektum létrehozása, három kulcs-érték párral -->
+        <% for (const key in object) { %>                           <!-- Ciklus, ami végigiterál az objektum kulcsain -->
+            <li>kulcs: <%= key %>, érték: <%= object[key] %></li>    <!-- Kiírja az aktuális kulcsot (key) a listában -->
+        <% } %>                                                     <!-- Ciklus vége -->                             
+    </ol>
+
+    <ol>
+        <% for (const key in object2) { %>                           <!-- Ciklus, ami végigiterál az objektum kulcsain -->
+            <li>kulcs: <%= key %>, érték: <%= object2[key] %></li>    <!-- Kiírja az aktuális kulcsot (key) a listában -->
+        <% } %>                                                     <!-- Ciklus vége -->                             
+    </ol>
+
+</body>
+</html>

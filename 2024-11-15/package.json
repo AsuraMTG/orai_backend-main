@@ -1,0 +1,17 @@
+{
+  "name": "2024-11-15",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "AsuraMTG",
+  "license": "ISC",
+  "description": "ES6 and EJS learning",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "path": "^0.12.7"
+  }
+}

@@ -19,6 +19,13 @@ TO INSTALL mysql2: npm i  mysql2
 
 TO INSTALL .env: npm i dotenv
 
+TO INSTALL ejs: npm i ejs
+
+
 TO START: node .\app.js
+
+-----------------------------------------------------------------
+
+TO FIND MIDDLEWARES: https://www.npmjs.com/
 
 -----------------------------------------------------------------
