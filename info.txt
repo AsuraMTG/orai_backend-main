@@ -15,7 +15,7 @@ TO INSTALL path: npm i path
 
 TO INSTALL fs: npm i fs
 
-TO INSTALL mysql2: npm i  mysql2
+TO INSTALL mysql2: npm i mysql2
 
 TO INSTALL .env: npm i dotenv
 
@@ -27,5 +27,16 @@ TO START: node .\app.js
 -----------------------------------------------------------------
 
 TO FIND MIDDLEWARES: https://www.npmjs.com/
+
+-----------------------------------------------------------------
+
+Extensions:
+
+- EJS language support
+- GitHub Pull Requests
+- JavaScript (ES6) code snippets
+- JUPITER
+- Live Server
+- Thunder Client
 
 -----------------------------------------------------------------
