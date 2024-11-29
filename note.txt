@@ -1,0 +1,17 @@
+routing express.router()
+
+async import { function1, finction2 } from fajlnev.mjs
+
+sync const express = require('express');
+
+trigger ud - sql
+
+-----------------------------------------------------------------
+
+importalas:
+
+- default export 
+- name export
+- minden egybe (*)
+
+-----------------------------------------------------------------
