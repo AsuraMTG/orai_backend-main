@@ -38,6 +38,7 @@ Extensions:
 - JUPITER
 - Live Server
 - Thunder Client
+- GitLens Inspect
 
 -----------------------------------------------------------------
 
