@@ -42,6 +42,8 @@ Extensions:
 
 -----------------------------------------------------------------
 
+TO USE INPORT/EXPORT:
+
 package.json:
 
 + "type": "module", 
