@@ -1,0 +1,11 @@
+// Létrehozás
+npm create vite@latest project_name
+
+// Belepes a mappaba
+cd project_name
+
+// npm letoltese
+npm install
+
+// alkalmazas inditas
+npm run dev
